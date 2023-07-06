@@ -1,0 +1,102 @@
+<!-- Build Periodic Table as shown in the below image -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            gap: 1px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-collapse: collapse;
+        }
+
+        .element {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .element:hover {
+            background-color: #e6e6e6;
+        }
+
+        .symbol {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .atomic-number {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            font-size: 10px;
+            font-weight: normal;
+            opacity: 0.5;
+        }
+
+        .name {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .atomic-mass {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Example element styles (customize as needed) */
+        .alkali-metal { background-color: #f7c6aa; }
+        .alkaline-earth-metal { background-color: #fadfad; }
+        .transition-metal { background-color: #d6eaf8; }
+        .post-transition-metal { background-color: #d4efdf; }
+        .metalloid { background-color: #f9e79f; }
+        .halogen { background-color: #fde9d9; }
+        .noble-gas { background-color: #f2f9f0; }
+        .lanthanide { background-color: #fce8e8; }
+        .actinide { background-color: #fadbd8; }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <!-- Row 1 -->
+        <tr>
+            <td class="element alkali-metal">
+                <div class="atomic-number">1</div>
+                <div class="symbol">H</div>
+                <div class="name">Hydrogen</div>
+                <div class="atomic-mass">1.008</div>
+            </td>
+            <td class="element alkali-metal">
+                <div class="atomic-number">3</div>
+                <div class="symbol">Li</div>
+                <div class="name">Lithium</div>
+                <div class="atomic-mass">6.94</div>
+            </td>
+            <!-- Rest of the elements -->
+            <!-- ... -->
+        </tr>
+        <!-- Rest of the rows -->
+        <!-- ... -->
+    </table>
+</body>
+</html>

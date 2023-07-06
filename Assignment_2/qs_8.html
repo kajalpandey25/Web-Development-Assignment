@@ -1,0 +1,67 @@
+<!-- /* Difference between absolute and relative and sticky and fixed position explain with example */ -->
+<!-- 
+/* Absolute and Relative Position:
+
+In web design and CSS (Cascading Style Sheets), absolute and relative position are used to control the placement of elements on a web page.
+
+Absolute Position: When an element is set to have an absolute position, it is positioned relative to its closest positioned ancestor (if any), or relative to the document if no positioned ancestor exists. This means that the element's position is explicitly defined by specifying values for the top, right, bottom, and left CSS properties. The element is taken out of the normal document flow, and other elements are not affected by its position.
+Example: */ -->
+
+<style>
+    .container {
+        position: relative;
+    }
+    .box {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+</style>
+<div class="container">
+    <div class="box">Absolute Position</div>
+</div>
+
+<!-- Relative Position: When an element is set to have a relative position, it is positioned relative to its normal position in the document flow. The element still occupies space in the document flow, and other elements are affected by its position. The top, right, bottom, and left CSS properties can be used to adjust the element's position.
+Example -->
+
+<style>
+    .box {
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+</style>
+<div class="box">Relative Position</div>
+
+
+
+<!-- Sticky Position: Sticky positioning is a hybrid of relative and fixed positioning. When an element is given a sticky position, it behaves like a relatively positioned element until a specified offset position is reached during scrolling. At that point, the element "sticks" to the window and remains fixed there.
+Example: -->
+
+<style>
+    .container {
+        height: 2000px;
+    }
+    .box {
+        position: sticky;
+        top: 100px;
+    }
+</style>
+<div class="container">
+    <div class="box">Sticky Position</div>
+</div>
+
+
+<!-- Fixed Position: When an element is set to have a fixed position, it is positioned relative to the window or viewport. The element remains fixed in its position even when the page is scrolled. Fixed elements do not affect or get affected by other elements in the document flow.
+Example: -->
+
+<style>
+    .box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+</style>
+<div class="box">Fixed Position</div>
+
+
