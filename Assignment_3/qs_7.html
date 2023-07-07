@@ -1,0 +1,138 @@
+<!-- In this coding challenge, your task is to create an information section for the previously built OneCard webpage clone, focusing on the different modes like dark and light modes. The webpage should look different depending on the screen size: dark mode for larger screens and light mode for smaller devices. The reference images are attached below. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneCard Landing Page</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+
+    /* Styles for the header */
+    header {
+      background-color: #171717;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Styles for the video section */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .video-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Styles for the information section */
+    .info-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Styles for dark mode */
+    @media (min-width: 768px) {
+      body {
+        background-color: #171717;
+        color: #fff;
+      }
+
+      /* Styles for the header in dark mode */
+      header {
+        background-color: #333;
+      }
+
+      /* Styles for the video section in dark mode */
+      section {
+        background-color: #171717;
+      }
+
+      .video-container video {
+        filter: brightness(70%);
+      }
+
+      /* Styles for the information section in dark mode */
+      .info-section {
+        background-color: #333;
+      }
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .video-container {
+        width: 90%;
+      }
+
+      /* Styles for light mode in smaller devices */
+      body {
+        background-color: #f1f1f1;
+        color: #333;
+      }
+
+      /* Styles for the information section in light mode */
+      .info-section {
+        background-color: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to OneCard</h1>
+    <p>A simple and elegant solution for managing your digital business card</p>
+  </header>
+
+  <section>
+    <div class="video-container">
+      <video src="path/to/your/video.mp4" controls>
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <h2>Discover OneCard</h2>
+    <p>Learn how OneCard can revolutionize the way you share your contact information.</p>
+  </section>
+
+  <div class="info-section">
+    <h2>OneCard Features</h2>
+    <p>Here are some key features of OneCard:</p>
+    <ul>
+      <li>Easy creation and customization of digital business cards</li>
+      <li>Seamless sharing through various channels</li>
+      <li>Real-time updates and analytics</li>
+      <li>Integration with popular contact management systems</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Your Agency. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

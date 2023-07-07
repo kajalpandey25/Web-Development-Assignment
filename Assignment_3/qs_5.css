@@ -1,0 +1,5 @@
+/*  What is the purpose of the orientation media feature? */
+
+/* Instead of relying on the orientation media feature, it is now recommended to use JavaScript-based solutions to detect and respond to device orientation changes. By utilizing JavaScript, developers can capture orientation events and apply custom logic or styles based on the detected orientation. This approach provides more accurate and reliable detection of device orientation across various devices and browsers. */
+
+/* The orientation media feature was used in CSS media queries to target and apply styles based on the orientation of the device's display, whether it was in portrait or landscape mode. However, due to inconsistencies in the way devices reported their orientation and changes in device capabilities, the orientation media feature was found to be unreliable and inconsistent across different browsers and devices. */

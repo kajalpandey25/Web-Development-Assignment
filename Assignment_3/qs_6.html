@@ -1,0 +1,94 @@
+
+<!-- 💡 Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
+
+Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneCard Landing Page</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styles for the header */
+    header {
+      background-color: #171717;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Styles for the video section */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    .video-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Styles for the footer */
+    footer {
+      background-color: #171717;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .video-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to OneCard</h1>
+    <p>A simple and elegant solution for managing your digital business card</p>
+  </header>
+
+  <section>
+    <div class="video-container">
+      <video src="path/to/your/video.mp4" controls>
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <h2>Discover OneCard</h2>
+    <p>Learn how OneCard can revolutionize the way you share your contact information.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Agency. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

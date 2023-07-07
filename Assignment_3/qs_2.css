@@ -1,0 +1,34 @@
+
+/*  How do you define a media query in CSS? */
+
+/* n CSS, a media query is defined using the @media rule. The @media rule is followed by a condition or set of conditions enclosed in parentheses, and within the curly braces {}, you specify the CSS rules that should be applied when the conditions are met. Here's the basic syntax for defining a media query:
+
+css
+ */
+
+ @media (condition) {
+    /* CSS rules to be applied when the condition is met */
+  }
+  
+  /* Targeting a specific viewport width: */
+
+  @media (max-width: 768px) {
+    /* CSS rules for viewport width up to 768 pixels */
+  }
+
+  /* This media query will apply the CSS rules within the curly braces when the viewport width is 768 pixels or less. */
+  /* Targeting a specific viewport height: */
+
+  @media (min-height: 600px) {
+    /* CSS rules for viewport height of 600 pixels or more */
+  }
+
+  /* This media query will apply the CSS rules when the viewport height is 600 pixels or greater. */
+
+  /* Combining multiple conditions: */
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    /* CSS rules for landscape orientation on small screens */
+  }
+  
+  /* This media query will apply the CSS rules when the viewport width is 768 pixels or less and the device is in landscape orientation. */
